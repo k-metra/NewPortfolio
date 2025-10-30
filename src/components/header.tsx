@@ -75,9 +75,10 @@ export default function Header() {
                 initial={{ opacity: 0, y: -25 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="hidden md:flex flex-row items-center space-x-6 [&>*]:transition-colors [&>*]:duration-200 [&>*]:ease-in-out">
+                className="hidden md:flex flex-row items-center gap-4 space-x-6 [&>*]:transition-colors [&>*]:duration-200 [&>*]:ease-in-out">
                     <Link to={`${navPrefix}/about`} className="hover:text-text-muted text-sm lg:text-base">{t('header.about')}</Link>
                     <Link to={`${navPrefix}/projects`} className="hover:text-text-muted text-sm lg:text-base">{t('header.projects')}</Link>
+                    <Link to={`${navPrefix}/pricing`} className="hover:text-text-muted text-sm lg:text-base">{t('header.pricing')}</Link>
                     <Link to={`${navPrefix}/contact`} className="hover:text-text-muted text-sm lg:text-base">{t('header.contact')}</Link>
                 </motion.div>
 
