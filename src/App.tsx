@@ -12,10 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/*" element={<LanguageWrapper />} />
-
         <Route path="/:lang/*" element={<LanguageWrapper />} />
-
-        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
