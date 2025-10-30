@@ -1,11 +1,28 @@
 {
     "header": {
-        "about": "Tungkol sa Akin",
-        "projects": "Mga Proyekto",
+        "about": "Tungkol Sa Akin",
+        "projects": "Mga Proyekto Ko",
         "contact": "Makipag-ugnayan",
+        "pricing": "Presyuhan",
         "language": "Tagalog"
     },
     "hero": {
         "body": "Ang iyong solusyon sa inyong mga IT at capstone na proyekto. Binibigyang buhay ang inyong ideya sa pag-code. May naiisip ka ba? May kailangan ka ba? Tara, itupad natin."
+    },
+    "work": "Mga ginagamit ko",
+    "techStack": {
+        "frontend": {
+            "p1": "Para sa frontend, solid ang kaalaman ko pag dating sa **React**. Madalas gamit ko ang TypeScript para makabuo ng mga dynamic at responsive na user interfaces. Sa labas ng frameworks, malawak rin ang kaalaman ko sa **HTML5**, **CSS3**, at **JavaScript (ES6+)** para masigurong maganda ang disenyo at maayos ang takbo ng mga aplikasyon na mga gawa ko.",
+            "p2": "Bukod sa React, gumagamit din ako ng iba't ibang libraries at frameworks, tulad ng **Framer Motion** para sa animations, **Redux** para sa state management, at **Axios** para sa pag-handle ng HTTP requests. Pamilyar din ako sa mga prinsipyo ng responsive design at mga frameworks tulad ng **Bootstrap** at **Tailwind** CSS para masiguring maayos ang takbo ng mga aplikasyon sa iba't ibang devices."
+        },
+        "backend": {
+            "p1": "Para naman sa backend, may malawak akong karanasan sa **Laravel**, **Django** at **Express.js** para makabuo ng mga RESTful APIs at server-side na aplikasyon. Marunong akong gumamit ng mga database tulad ng **MongoDB** at **MySQL** para sa pag-iimbak at pagkuha ng data, at comfortable akong magssulat ng mga complex na queries, at sa pag-optimize ng database performance. Para sa mga magagaan naman na gawain, kagaya ng capstones or mga prototype na proyekto, ginagamit ko ang **SQLite** para masmabilis ang development.",
+            "p2": "Meron rin akong kaalaman sa authentication at authorization mechanisms, tulad ng **JWT** at **OAuth**, para masiguro ang seguridad ng mga aplikasyon. Kasama na rin ang pag deploy ng mga applications sa cloud platforms tulad ng **Hostinger** at **AWS**, at ang paggamit ng version control systems tulad ng **Git** para sa collaborative development."
+        },
+        "languages": {
+            "p1": "Magaling ako at malawak ang aking kaalaman sa iba't ibang programming languages, tulad ng **JavaScript**, **TypeScript**, **Python**, at **Java**. Dahil dito, kaya kong mag-adapt sa iba't ibang pangangailangan ng proyekto at makipagtulungan ng maayos sa ibang developers. Bukod sa web development, may karanasan din ako sa **C++** at **C#** para sa software development. May solid din akong pag-unawa sa object-oriented programming (OOP) princpiles at design patterns, na ginagamit ko upang makasulat ng malinins, madaling intindihan, at maintainable na code.",
+            "p2": "Magaling din ako sa **Lua** para sa **Roblox**. Nakakabuo ako ng mga interactive at engaging gaming experiences. Dahil sa aking versatility sa programming languages, kaya kong harapin ang iba't ibang klase ng proyekto, mula sa web applications hanggang sa game development.",
+            "p3": "May karanasan din ako sa mga scripting languages tulad ng **Bash** at **PowerShell** para sa pag-automate ng mga gawain at pamamahala ng server environments."
+        }
     }
 }

@@ -3,9 +3,26 @@
         "about": "About",
         "projects": "Projects",
         "contact": "Contact",
+        "pricing": "Pricing",
         "language": "English"
     },
     "hero": {
         "body": "Your solution to IT & capstone projects. Bringing ideas to life with code. Got a project in mind? Let's make it happen. I offer services to students and professionals."
+    },
+    "work": "Tech Stack",
+    "techStack": {
+        "frontend": {
+            "p1": "For the frontend, I have a strong background in **React**, utilizing TypeScript to build dynamic and responsive user interfaces. I am proficient in **HTML5**, **CSS3**, and **JavaScript (ES6+)**, ensuring that the applications I develop are both visually appealing and functionally robust.",
+            "p2": "Apart from React, I also use various libraries and frameworks such as **Framer Motion** for animations, **Redux** for state management, and **Axios** for handling HTTP requests. I am also familiar with responsive design principles and frameworks like **Bootstrap** and **Tailwind** CSS to ensure that applications work seamlessly across different devices."
+        },
+        "backend": {
+            "p1": "On the backend, I have experience working with **Laravel**, **Django** and **Express.js** to create RESTful APIs and server-side applications. I am skilled in using databases such as **MongoDB** and **MySQL** for data storage and retrieval, and I am comfortable with writing complex queries and optimizing database performance. For lightweight capstones and prototypes, I use **SQLite** for rapid development.",
+            "p2": "I also have experience with authentication and authorization mechanisms, including **JWT** and **OAuth**, to ensure secure access to applications. Additionally, I am familiar with deploying applications on cloud platforms like **Hostinger** and **AWS**, as well as using version control systems like **Git** for collaborative development."
+        },
+        "languages": {
+            "p1": "I am proficient in a variety of programming languages, including **JavaScript**, **TypeScript**, **Python**, and **Java**. This allows me to adapt to different project requirements and collaborate effectively with other developers. Outside of web development, I have experience with **C++** and **C#** for software development. I also have a solid understanding of object-oriented programming (OOP) principles and design patterns, which I apply to write clean, maintainable, and efficient code.",
+            "p2": "I am also proficient in **Lua** for **Roblox** game development, creating interactive and engaging gaming experiences. My versatility in programming languages enables me to tackle a wide range of projects, from web applications to game development.",
+            "p3": "I also have experience with scripting languages like **Bash** and **PowerShell** for automating tasks and managing server environments."
+        }
     }
 }
