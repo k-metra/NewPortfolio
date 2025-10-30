@@ -68,6 +68,7 @@ export const otherPlans: PricingType[] = [
             "Personalized learning plans",
             "Flexible scheduling",
             "Hands-on coding exercises",
+            "Python, Java, JavaScript, and more",
             "Access to exclusive resources"
         ],
         "popular": true
