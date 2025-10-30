@@ -20,10 +20,10 @@ export default function HeroCard() {
                 </h2>
 
                 <div className="flex flex-row gap-2 items-center">
-                    <button className="p-2 border border-border rounded-lg hover:bg-white hover:text-background transition-colors duration-300 ease-in-out cursor-pointer">
+                    <button onClick={() => window.open("https://github.com/k-metra/", "_blank")} className="p-2 border border-border rounded-lg hover:bg-white hover:text-background transition-colors duration-300 ease-in-out cursor-pointer">
                         <FaGithub size={24} />
                     </button>
-                    <button className="p-2 border border-border rounded-lg hover:bg-white hover:text-background transition-colors duration-300 ease-in-out cursor-pointer">
+                    <button onClick={() => window.open("https://www.facebook.com/m.trakurt", "_blank")} className="p-2 border border-border rounded-lg hover:bg-white hover:text-background transition-colors duration-300 ease-in-out cursor-pointer">
                         <FaFacebook size={24} />
                     </button>
                 </div>
