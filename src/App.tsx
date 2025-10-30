@@ -4,11 +4,20 @@ import './App.css';
 
 import Header from './components/header';
 
+import LanguageWrapper from './wrappers/LanguageWrapper';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/*" element={<LanguageWrapper />} />
+
+        <Route path="/:lang/*" element={<LanguageWrapper />} />
+
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
