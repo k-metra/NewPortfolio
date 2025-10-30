@@ -45,13 +45,10 @@ export const pricingPlans: PricingType[] = [
             "Full CMS system",
             "Up to ∞ subpages"
         ]
-    }
-]
-
-export const otherPlans: PricingType[] = [
+    },
     {
         "name": "Hosting and Domain Setup",
-        "description": "Get your website online with professional hosting and domain setup services.",
+        "description": "Get your website online with professional hosting and domain setup services. Suitable for IT/CS students looking to host their projects.",
         "price": "from ₱800/mo",
         "features": [
             "Reliable hosting with 99.9% uptime",
@@ -60,9 +57,12 @@ export const otherPlans: PricingType[] = [
             "Regular backups and security checks"
         ]
     },
+]
+
+export const otherPlans: PricingType[] = [
     {
-        "name": "Program Tutoring",
-        "description": "One-on-one programming tutoring sessions to help you master programming skills.",
+        "name": "Programming Tutoring Sessions",
+        "description": "Having trouble learning how to code? Explore my one-on-one programming tutoring sessions to help you master your programming skills and unlock your full potential.",
         "price": "from ₱249/hr",
         "features": [
             "Personalized learning plans",
@@ -117,6 +117,18 @@ export const otherPlans: PricingType[] = [
             "Print materials (brochures, business cards, etc.)",
             "Brand identity development",
             "Unlimited revisions"
+        ]
+    },
+    {
+        "name": "PC Troubleshoot and Repair",
+        "description": "Slow system? Hardware problems? Let's help your PC get back in shape.",
+        "price": "from ₱300",
+        "features": [
+            "Comprehensive diagnostics",
+            "Virus and malware removal",
+            "Recommendations for hardware upgrades",
+            "Performance optimization",
+            "Data backup and recovery assistance"
         ]
     }
 ]
