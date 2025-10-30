@@ -6,6 +6,7 @@ import Contact from '../pages/Contact';
 import Projects from '../pages/Projects';
 import About from '../pages/About';
 import Home from '../pages/Home';
+import Pricing from '../pages/Pricing';
 
 export default function LanguageWrapper() {
     const { lang } = useParams<{ lang: string }>();
@@ -39,6 +40,7 @@ export default function LanguageWrapper() {
                 <Route path="about" element={<About />} />
                 <Route path="projects" element={<Projects />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="pricing" element={<Pricing />} />
             </Routes>
             </div>
         </>
