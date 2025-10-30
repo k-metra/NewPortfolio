@@ -16,7 +16,7 @@ export default function PricingCard({ title, description, price, features, popul
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className={`flex flex-col h-full md:max-w-sm max-w-full rounded-lg shadow-lg ${popular ? 'border-2 border-text-primary' : 'border border-border'} relative font-jetbrains text-text-primary`}>
+            className={`flex flex-col h-full md:max-w-sm max-w-full rounded-lg shadow-lg ${popular ? 'border-2 border-text-primary drop-shadow-[0_4px_20px_rgba(255,255,255,0.05)]' : 'border border-border'} relative font-jetbrains text-text-primary`}>
                 {popular && (
                     <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-white text-background px-4 py-1 text-sm font-semibold font-jetbrains rounded-full z-10">
                         Popular
