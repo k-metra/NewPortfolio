@@ -24,5 +24,14 @@
             "p2": "I am also proficient in **Lua** for **Roblox** game development, creating interactive and engaging gaming experiences. My versatility in programming languages enables me to tackle a wide range of projects, from web applications to game development.",
             "p3": "I also have experience with scripting languages like **Bash** and **PowerShell** for automating tasks and managing server environments."
         }
+    },
+    "experience": {
+        "title": "Experience",
+        "mapua": {
+            "description": "Participated in the Mapua MCL-ACM CodeX 2025 Programming Competition and secured first place."
+        },
+        "petmedics": {
+            "description": "Developed a sample marketing website with admin panel, role-based access, and appointment scheduling system for a veterinary clinic using React, Laravel, and SQLite."
+        }
     }
 }

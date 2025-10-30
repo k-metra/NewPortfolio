@@ -24,5 +24,14 @@
             "p2": "Magaling din ako sa **Lua** para sa **Roblox**. Nakakabuo ako ng mga interactive at engaging gaming experiences. Dahil sa aking versatility sa programming languages, kaya kong harapin ang iba't ibang klase ng proyekto, mula sa web applications hanggang sa game development.",
             "p3": "May karanasan din ako sa mga scripting languages tulad ng **Bash** at **PowerShell** para sa pag-automate ng mga gawain at pamamahala ng server environments."
         }
+    },
+    "experience": {
+        "title": "Mga Karanasan",
+        "mapua": {
+            "description": "Sumali sa Mapua MCL-ACM CodeX 2025 Programming Competition at nanalo ng first place."
+        },
+        "petmedics": {
+            "description": "Bumuo ng isang sample marketing website na may admin panel, role-based access, at appointment scheduling system para sa isang veterinary clinic gamit ang React, Laravel, at SQLite."
+        }
     }
 }
