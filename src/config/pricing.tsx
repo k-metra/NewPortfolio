@@ -105,5 +105,17 @@ export const otherPlans: PricingType[] = [
             "Installation and setup support",
             "Revisions free of charge"
         ]
+    },
+    {
+        "name": "Graphic Design",
+        "description": "Professional graphic design services to enhance your brand and marketing materials.",
+        "price": "from ₱500",
+        "features": [
+            "Custom logo design",
+            "Social media graphics",
+            "Print materials (brochures, business cards, etc.)",
+            "Brand identity development",
+            "Unlimited revisions"
+        ]
     }
 ]
