@@ -1,3 +1,4 @@
+import Experience from "../components/experience";
 import HeroCard from "../components/heroCard";
 import TechStack from "../components/techStack";
 
@@ -6,6 +7,7 @@ export default function Home() {
         <main className="w-full min-h-screen flex flex-col items-center pt-20 pb-10 bg-background px-4 overflow-x-hidden">
             <HeroCard />
             <TechStack />
+            <Experience />
         </main>
     )
 }
