@@ -150,7 +150,14 @@ export default function Header() {
                             className="absolute right-0 top-0 h-full w-64 bg-background border-l border-border shadow-2xl"
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <div className="flex flex-col pt-20 px-6 space-y-6">
+                            <div className="text-left flex flex-col pt-20 px-6 my-6 space-y-6 font-jetbrains [&>*]:border-b [&>*]:border-border [&>*]:pb-4">
+                                <Link 
+                                    to={`${navPrefix}/`} 
+                                    className="text-text-primary hover:text-primary transition-colors duration-200 text-lg font-medium"
+                                    onClick={closeMobileMenu}
+                                >
+                                    Kurt Metra
+                                </Link>
                                 <Link 
                                     to={`${navPrefix}/about`} 
                                     className="text-text-primary hover:text-primary transition-colors duration-200 text-lg font-medium"
