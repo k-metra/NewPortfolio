@@ -14,6 +14,10 @@ export default function Home() {
                 <link rel="canonical" href="https://www.kurtmetra.dev/en/" />
                 <link rel="alternate" hrefLang="en" href="https://www.kurtmetra.dev/en/" />
                 <link rel="alternate" hrefLang="tl" href="https://www.kurtmetra.dev/tl/" />
+                <meta property="og:title" content="Kurt Metra - Full-Stack Developer" />
+                <meta property="og:description" content="Kurt Metra - Full-Stack Developer Portfolio. Your solution to IT & capstone projects." />
+                <meta property="og:url" content="https://www.kurtmetra.dev/en/" />
+                <meta property="og:type" content="website" />
             </Helmet>
             <HeroCard />
             <TechStack />

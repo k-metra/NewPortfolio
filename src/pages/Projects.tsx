@@ -9,6 +9,10 @@ export default function Projects() {
                 <link rel="canonical" href="https://www.kurtmetra.dev/en/projects" />
                 <link rel="alternate" hrefLang="en" href="https://www.kurtmetra.dev/en/projects" />
                 <link rel="alternate" hrefLang="tl" href="https://www.kurtmetra.dev/tl/projects" />
+                <meta property="og:title" content="Kurt Metra - My Projects" />
+                <meta property="og:description" content="Explore the projects developed by Kurt Metra, a Full-Stack Developer." />
+                <meta property="og:url" content="https://www.kurtmetra.dev/en/projects" />
+                <meta property="og:type" content="website" />
             </Helmet>
             <div className="w-full max-w-[90vw] sm:max-w-[28rem] md:max-w-[35rem] lg:max-w-[45rem] xl:max-w-[50rem] mx-4">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary font-jetbrains">Projects</h1>

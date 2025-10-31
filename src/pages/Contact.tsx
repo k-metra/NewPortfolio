@@ -17,6 +17,11 @@ export default function Contact() {
                 <link rel="canonical" href="https://www.kurtmetra.dev/en/contact" />
                 <link rel="alternate" hrefLang="en" href="https://www.kurtmetra.dev/en/contact" />
                 <link rel="alternate" hrefLang="tl" href="https://www.kurtmetra.dev/tl/contact" />
+
+                <meta property="og:title" content="Kurt Metra - Contact Me" /> 
+                <meta property="og:description" content="Get in touch with Kurt Metra, Full-Stack Developer. Reach out via email, phone, Facebook, or GitHub." />
+                <meta property="og:url" content="https://www.kurtmetra.dev/en/contact" />
+                <meta property="og:type" content="website" />
             </Helmet>
             <motion.div 
             initial={{ opacity: 0, y: 20 }}

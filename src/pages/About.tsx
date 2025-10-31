@@ -9,6 +9,11 @@ export default function About() {
                 <link rel="canonical" href="https://www.kurtmetra.dev/en/about" />
                 <link rel="alternate" hrefLang="en" href="https://www.kurtmetra.dev/en/about" />
                 <link rel="alternate" hrefLang="tl" href="https://www.kurtmetra.dev/tl/about" />
+
+                <meta property="og:title" content="Kurt Metra - About Me" />
+                <meta property="og:description" content="Learn more about Kurt Metra, a Full-Stack Developer specializing in web and application development." />
+                <meta property="og:url" content="https://www.kurtmetra.dev/en/about" />
+                <meta property="og:type" content="website" />
             </Helmet>
             <div className="w-full max-w-[90vw] sm:max-w-[28rem] md:max-w-[35rem] lg:max-w-[45rem] xl:max-w-[50rem] mx-4">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary font-jetbrains">About</h1>

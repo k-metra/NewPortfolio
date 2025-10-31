@@ -14,6 +14,10 @@ export default function Pricing() {
             <link rel="canonical" href="https://www.kurtmetra.dev/en/pricing" />
             <link rel="alternate" hrefLang="en" href="https://www.kurtmetra.dev/en/pricing" />
             <link rel="alternate" hrefLang="tl" href="https://www.kurtmetra.dev/tl/pricing" />
+            <meta property="og:title" content="Kurt Metra - Pricing" />
+            <meta property="og:description" content="Explore the pricing plans offered by me - from websites to applications." />
+            <meta property="og:url" content="https://www.kurtmetra.dev/en/pricing" />
+            <meta property="og:type" content="website" />
         </Helmet>
 
         <main className="w-full min-h-screen flex flex-col items-center pt-20 bg-background overflow-x-hidden font-jetbrains">
