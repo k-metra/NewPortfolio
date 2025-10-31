@@ -25,6 +25,7 @@ export default function HeroCard() {
                 </div>
 
                 <div className="flex flex-row gap-2 items-center flex-shrink-0">
+                    <a href='https://ko-fi.com/S6S11NOJWU' target='_blank'><img height='36' className="border-none h-[36px]" src='https://storage.ko-fi.com/cdn/kofi6.png?v=6'  alt='Buy Me a Coffee at ko-fi.com' /></a>
                     <button 
                         onClick={() => window.open("https://github.com/k-metra/", "_blank")} 
                         className="p-2 border border-border rounded-lg hover:bg-white hover:text-background flex justify-center items-center transition-colors duration-300 ease-in-out cursor-pointer"
