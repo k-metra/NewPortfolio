@@ -33,5 +33,9 @@
         "petmedics": {
             "description": "Developed a sample marketing website with admin panel, role-based access, and appointment scheduling system for a veterinary clinic using React, Laravel, and SQLite."
         }
+    },
+
+    "contact": {
+        "body": "You can contact me via E-mail, Facebook, or even by phone number. I usually respond within a day."
     }
 }
