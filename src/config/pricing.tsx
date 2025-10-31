@@ -143,6 +143,18 @@ export const otherPlans: PricingType[] = [
         ]
     },
     {
+        "name": "Discord Bot Development",
+        "description": "Custom Discord bot development services to enhance your server's functionality and engagement.",
+        "price": "from ₱1,000",
+        "features": [
+            "Custom command creation",
+            "Moderation tools",
+            "Integration with external APIs",
+            "24/7 uptime support",
+            "Post-deployment support"
+        ]
+    },
+    {
         "name": "Roblox Game Development",
         "description": "Let's fulfill your Roblox game's scripting needs.",
         "price": "from ₱1,500",
