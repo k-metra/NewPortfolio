@@ -57,6 +57,17 @@ export const pricingPlans: PricingType[] = [
             "Regular backups and security checks"
         ]
     },
+    {
+        "name": "UI/UX Design",
+        "description": "Professional UI/UX design services to create engaging and user-friendly interfaces for your website or application.",
+        "price": "from ₱1,500",
+        "features": [
+            "Custom wireframes and prototypes",
+            "User research and testing",
+            "Responsive design principles",
+            "Collaboration with development team"
+        ]
+    }
 ]
 
 export const otherPlans: PricingType[] = [
@@ -129,6 +140,18 @@ export const otherPlans: PricingType[] = [
             "Recommendations for hardware upgrades",
             "Performance optimization",
             "Data backup and recovery assistance"
+        ]
+    },
+    {
+        "name": "Roblox Game Development",
+        "description": "Let's fulfill your Roblox game's scripting needs.",
+        "price": "from ₱1,500",
+        "features": [
+            "Custom game mechanics",
+            "Scripting in Lua",
+            "Game testing and debugging",
+            "Collaboration on game design",
+            "Post-launch support"
         ]
     }
 ]
