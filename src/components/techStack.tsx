@@ -112,46 +112,6 @@ export default function TechStack() {
                 </div>
             </Marquee>
 
-            {/*
-            <h2 className="text-2xl mt-4 mb-2 text-left font-semibold text-text-primary font-jetbrains">Frontend</h2>
-            <p>
-                <ReactMarkdown>
-                    {t('techStack.frontend.p1')}
-                </ReactMarkdown>
-            </p>
-            <p>
-                <ReactMarkdown>
-                    {t('techStack.frontend.p2')}
-                </ReactMarkdown>
-            </p>
-            <h2 className="text-2xl mt-4 mb-2 text-left font-semibold text-text-primary font-jetbrains">Backend</h2>
-            <p>
-                <ReactMarkdown>
-                    {t('techStack.backend.p1')}
-                </ReactMarkdown>
-            </p>
-            <p>
-                <ReactMarkdown>
-                    {t('techStack.backend.p2')}
-                </ReactMarkdown>
-            </p>
-            <h2 className="text-2xl mt-4 mb-2 text-left font-semibold text-text-primary font-jetbrains">Languages</h2>
-            <p>
-                <ReactMarkdown>
-                    {t('techStack.languages.p1')}
-                </ReactMarkdown>
-            </p>
-            <p>
-                <ReactMarkdown>
-                    {t('techStack.languages.p2')}
-                </ReactMarkdown>
-            </p>
-            <p>
-                <ReactMarkdown>
-                    {t('techStack.languages.p3')}
-                </ReactMarkdown>
-            </p>*/}
-
         </motion.div>
     )
 }
