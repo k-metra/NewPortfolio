@@ -1,10 +1,21 @@
 import { PricingType, pricingPlans, otherPlans } from '../config/pricing';
 import PricingCard from '../components/pricingCard';
 import Footer from '../components/footer';
+import { Helmet } from 'react-helmet-async';
+
+
 
 export default function Pricing() {
     return (
         <>
+        <Helmet>
+            <title>Kurt Metra - Pricing</title>
+            <meta name="description" content="Explore the pricing plans offered by me - from websites to applications." />
+            <link rel="canonical" href="https://www.kurtmetra.dev/en/pricing" />
+            <link rel="alternate" hrefLang="en" href="https://www.kurtmetra.dev/en/pricing" />
+            <link rel="alternate" hrefLang="tl" href="https://www.kurtmetra.dev/tl/pricing" />
+        </Helmet>
+
         <main className="w-full min-h-screen flex flex-col items-center pt-20 bg-background overflow-x-hidden font-jetbrains">
             <div className="w-full max-w-[90vw] sm:max-w-[28rem] md:max-w-[35rem] lg:max-w-[45rem] xl:max-w-[50rem] mx-4">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mt-4 text-text-primary font-jetbrains">Web Services</h1>

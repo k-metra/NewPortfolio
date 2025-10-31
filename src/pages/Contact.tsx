@@ -4,12 +4,20 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
     const { t } = useTranslation();
 
     return (
         <main className="w-full min-h-screen flex font-jetbrains flex-col items-center pt-20 pb-10 bg-background px-4 overflow-x-hidden">
+            <Helmet>
+                <title>Kurt Metra - Contact Me</title>
+                <meta name="description" content="Get in touch with Kurt Metra, Full-Stack Developer. Reach out via email, phone, Facebook, or GitHub." />
+                <link rel="canonical" href="https://www.kurtmetra.dev/en/contact" />
+                <link rel="alternate" hrefLang="en" href="https://www.kurtmetra.dev/en/contact" />
+                <link rel="alternate" hrefLang="tl" href="https://www.kurtmetra.dev/tl/contact" />
+            </Helmet>
             <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
