@@ -33,7 +33,7 @@ export default function HeroCard() {
                     </button>
                     <button 
                         onClick={() => window.open("https://www.facebook.com/m.trakurt", "_blank")} 
-                        className="p-2 border border-border rounded-lg hover:bg-white flex justify-center items-center hover:text-background transition-colors duration-300 ease-in-out cursor-pointer"
+                        className="p-2 border border-border rounded-lg hover:bg-white flex justify-center items-centerw hover:text-background transition-colors duration-300 ease-in-out cursor-pointer"
                     >
                         <FaFacebook size={20} />
                     </button>
