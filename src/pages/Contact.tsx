@@ -10,7 +10,7 @@ export default function Contact() {
     const { t } = useTranslation();
 
     return (
-        <main className="w-full min-h-screen flex font-jetbrains flex-col items-center pt-20 pb-10 bg-background px-4 overflow-x-hidden">
+        <main className="w-full min-h-screen flex font-jetbrains flex-col items-center pt-24 pb-10 bg-background px-4 overflow-x-hidden">
             <Helmet>
                 <title>Kurt Metra - Contact Me</title>
                 <meta name="description" content="Get in touch with Kurt Metra, Full-Stack Developer. Reach out via email, phone, Facebook, or GitHub." />
@@ -38,6 +38,7 @@ export default function Contact() {
                     <ContactAvatar icon={<IoIosPhonePortrait />} name="Phone Number" anchor="+63 993 992 8496" />
                     <ContactAvatar icon={<FaGithub />} name="GitHub" anchor="k-metra" url="https://github.com/k-metra" />
                 </div>
+                <p className="text-text-muted leading-relaxed mt-4">{t('contact.body2')}</p>
             </motion.div>
         </main>
     )
