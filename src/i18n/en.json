@@ -36,6 +36,28 @@
     },
 
     "contact": {
-        "body": "You can contact me via E-mail, Facebook, or even by phone number. I usually respond within a day."
+        "body": "You can contact me via E-mail, Facebook, or even by phone number. I usually respond within a day.",
+        "body2": "If you're a LOA student, feel free to reach out to me personally! I'm often found in the CCS Faculty Lounge (if I have no classes)."
+    },
+
+    "about": {
+        "p1": "Hi! I'm Kurt Metra. I'm an 18-year-old BSIT Student in my first year, focused on web development and design, with over five years of programming & techical experience. I often provide assistance to students, especially 4th-years, for their needs and capstone projects.",
+        "p2": "I've been engaged in web development for very well over a year. I create full-stack websites with a focus on minimalism and user experience. My goal is to deliver high-quality, efficient, and visually appealing web solutions that meet the needs of my clients. Aside from web development, I also have a strong background in Roblox game development, and most especially the programming language **Lua**, which I have been using for over five years. I've used it to script Roblox games, and even create mods for older games such as **PAYDAY 2**.",
+        "p3": "I first started out with the programming language Lua in 2020, with Roblox game development - but eventually I branched out into other areas of development. I started learning Discord bot development using **JavaScript**, and later on explored **Java**, which I used to create Minecraft plugins in 2021.",
+        "p4": "Over time, I expanded my skill set to include web development technologies such as **HTML**, **CSS**, and **JavaScript**. I later learned popular frameworks and libraries such as **React** and **Node.js**, which enabled me to build dynamic responsive web applications. My journey in programming has been driven by a passion for creating innovative solutions and a commitment to continuous learning and improvement.",
+        "p5": "Today, I specialize in full-stack web development, leveraging my diverse programming background to deliver comprehensive solutions that meet the unique needs of my clients. Despite being a 1st-year student, I believe in my ability to be able to deliver quality projects that exceed expectations.",
+        "p6": "Looking ahead, I am eager to further enhance my skills in web development and explore new technologies and frameworks. I aim to take on more complex projects that challenge my abilities and allow me to grow as a developer. Additionally, I plan to expand my knowledge in related areas such as mobile app development and cloud computing, with the goal of becoming a versatile and well-rounded full-stack developer.",
+        "p7": "This 5-year journey with programming has been incredibly rewarding, and I am excited about the opportunities that lie ahead as I continue my passions and interests - it doesn't just end here.",
+
+        "timeline": {
+            "1": "Began programming with Lua, focusing on Roblox game development and scripting.",
+            "2": "Learned JavaScript and started developing custom Discord bots for server management and engagement.",
+            "3": "Explored Java programming to create custom Minecraft plugins, enhancing gameplay experiences.",
+            "4": "Started learning Blender for 3D modeling and design, expanding creative skills beyond programming.",
+            "5": "Attended my first ever competition, and ended up surprisingly securing first place!",
+            "6": "Dove into web development, mastering HTML, CSS, JavaScript, and frameworks like React and Django to build dynamic web applications.",
+            "7": "Came back even stronger, and secured first place this time around!",
+            "8": "Continuing to expand my skill set in web development, application development, and other programming areas to stay current with industry trends."
+        }
     }
 }
