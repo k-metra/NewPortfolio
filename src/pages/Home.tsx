@@ -1,6 +1,7 @@
 import Experience from "../components/experience";
 import Footer from "../components/footer";
 import HeroCard from "../components/heroCard";
+import Kofi from "../components/kofi";
 import TechStack from "../components/techStack";
 
 import { Helmet } from 'react-helmet-async'
@@ -24,6 +25,7 @@ export default function Home() {
             <HeroCard />
             <TechStack />
             <Experience />
+            <Kofi />
             <Footer/>
         </main>
         </>
