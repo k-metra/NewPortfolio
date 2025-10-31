@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Link, useLocation, useParams } from "react-router-dom";
 import { useState } from "react";
 
+import km_logo from "../assets/km_logo.svg";
+
 export default function Header() {
     const { t, i18n } = useTranslation();
     const { lang } = useParams<{ lang: string }>();
@@ -67,7 +69,10 @@ export default function Header() {
                     }
                 }}
                 className="text-lg sm:text-xl md:text-2xl font-bold cursor-pointer z-60">
-                    <Link to={`${navPrefix}/`}>Kurt Metra</Link>
+                    <Link className="flex flex-row gap-3 items-center justify-center" to={`${navPrefix}/`}>
+                    <object className="max-h-20" data={km_logo} type="image/svg+xml"></object>
+                    <span className="hidden md:inline-block">Kurt Metra</span>
+                    </Link>
                 </motion.h1>
 
                 {/* Desktop Navigation */}
