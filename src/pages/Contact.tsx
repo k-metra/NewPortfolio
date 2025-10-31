@@ -3,8 +3,11 @@ import ContactAvatar from "../components/contactAvatar";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import { IoIosPhonePortrait } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+    const { t } = useTranslation();
+
     return (
         <main className="w-full min-h-screen flex font-jetbrains flex-col items-center pt-20 pb-10 bg-background px-4 overflow-x-hidden">
             <motion.div 
@@ -14,11 +17,11 @@ export default function Contact() {
             exit={{ opacity: 0, y: 20}}
             className="w-full max-w-[90vw] sm:max-w-[28rem] md:max-w-[35rem] lg:max-w-[45rem] xl:max-w-[50rem] mx-4">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary">Contact Me</h1>
-                <p className="text-text-muted leading-relaxed mt-4">You can contact me via E-mail, Facebook, or even by phone number. I usually respond within a day.</p>
+                <p className="text-text-muted leading-relaxed mt-4">{t('contact.body')}</p>
 
-                <div className="mt-4 flex flex-row gap-4 items-center justify-around border border-border p-5 rounded-lg">
+                <div className="mt-4 md:flex grid grid-cols-2 md:flex-row gap-4 items-center md:justify-around border border-border p-5 rounded-lg">
                     <ContactAvatar icon={<MdOutlineMailOutline />} name="E-mail" anchor="metrakurt@gmail.com" />
-                    <ContactAvatar icon={<FaFacebook />} name="Facebook" anchor="Kurt Metra" url="https://www.facebook.com/kurt.metra" />
+                    <ContactAvatar icon={<FaFacebook />} name="Facebook" anchor="Kurt Metra" url="https://www.facebook.com/m.trakurt" />
                     <ContactAvatar icon={<IoIosPhonePortrait />} name="Phone Number" anchor="+63 993 992 8496" />
                     <ContactAvatar icon={<FaGithub />} name="GitHub" anchor="k-metra" url="https://github.com/k-metra" />
                 </div>
