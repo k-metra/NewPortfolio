@@ -8,7 +8,7 @@ type Fields = {
 
 export default function InputField({ label, name, type, required = true, className = ""}: Fields) {
     return (
-        <label className={`relative ${className}`}>
+        <label className={`relative block w-full ${className}`}>
                 {type === "textarea" ? ( <textarea name={name} className={`px-6 py-3 align-middle peer text-text-primary bg-background border border-border rounded-md min-h-56 resize-y w-full focus:outline-none focus:border-2 focus:border-text-primary transition-colors ${className}`} required={required}></textarea> ) 
                 :( <input name={name} type={type} className={`px-6 block peer text-text-primary bg-background border border-border rounded-md min-h-12 w-full focus:outline-none focus:border-2 focus:border-text-primary transition-colors`} required={required} /> )}
 
