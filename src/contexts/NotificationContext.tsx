@@ -1,4 +1,5 @@
 import  React, { createContext, useCallback, useContext, useState } from 'react';
+import { CiCircleInfo } from "react-icons/ci";
 
 type NotificationType = 'info' | 'success' | 'error';
 
@@ -16,12 +17,17 @@ interface NotificationContextType {
 
 const NotificationContext = createContext<NotificationContextType | undefined>(undefined);
 
-export const useNotification = () => {
-    return useContext(NotificationContext);
+export const useNotification = (): NotificationContextType => {
+    const context = useContext(NotificationContext);
+    if (!context) {
+        throw new Error("useNotification must be used within a NotificationProvider");
+    }
+    return context;
 };
 
 export const NotificationProvider = ({ children }: { children: React.ReactNode }) => {
     const [ notifications, setNotifications ] = useState<Notification[]>([]);
+    const [ isHovered, setIsHovered ] = useState<boolean>(false);
 
     const addNotification = useCallback((message: string, type: NotificationType = "info") => {
         const id = Date.now();
@@ -40,7 +46,10 @@ export const NotificationProvider = ({ children }: { children: React.ReactNode }
                 {notifications.map(({ id, message, type}) => (
                     <div
                         key={id}
-                        className={`px-4 py-2 rounded-md shadow-lg text-white font-jetbrains transition-all duration-300 transform
+                        onClick={() => setNotifications((prev => prev.filter((notif) => notif.id !== id)))}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                        className={`px-8 py-6 cursor-pointer relative flex flex-row gap-3 items-center rounded-md shadow-lg text-white font-jetbrains transition-all duration-300 transform
                             ${type === 'info' 
                                 ? 'bg-blue-500' 
                                 : type === 'success'
@@ -48,7 +57,10 @@ export const NotificationProvider = ({ children }: { children: React.ReactNode }
                                 'bg-red-500'}
                             `}
                     >
+                        {type === 'info' && <CiCircleInfo size={40} />}
                         {message}
+                        <span className={`hidden ml-4 text-[10px] md:absolute bottom-1 left-1/2 -translate-x-1/2 transition-opacity duration-300 ${isHovered? 'opacity-75' : 'opacity-0'}`}>Click to dismiss</span>
+                        <span className="text-[12px] absolute bottom-1 left-1/2 -translate-x-1/2 md:hidden animate-pulse">Tap to Dismiss</span>
                     </div>
                 ))}
             </div>
