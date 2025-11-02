@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation, useParams } from "react-router-dom";
 import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 import km_logo from "../assets/km_logo.svg";
 
@@ -107,26 +108,7 @@ export default function Header() {
                         onClick={toggleMobileMenu}
                         aria-label="Toggle mobile menu"
                     >
-                        <motion.span
-                            animate={{
-                                rotate: isMobileMenuOpen ? 45 : 0,
-                                y: isMobileMenuOpen ? 6 : 0,
-                            }}
-                            className="w-6 h-0.5 bg-text-primary transition-all duration-300 absolute"
-                        />
-                        <motion.span
-                            animate={{
-                                opacity: isMobileMenuOpen ? 0 : 1,
-                            }}
-                            className="w-6 h-0.5 bg-text-primary transition-all duration-300 absolute"
-                        />
-                        <motion.span
-                            animate={{
-                                rotate: isMobileMenuOpen ? -45 : 0,
-                                y: isMobileMenuOpen ? -6 : 0,
-                            }}
-                            className="w-6 h-0.5 bg-text-primary transition-all duration-300 absolute"
-                        />
+                        <RxHamburgerMenu size={28} />
                     </motion.button>
                 </div>
             </header>
