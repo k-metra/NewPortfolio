@@ -5,6 +5,7 @@ import './i18n';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HelmetProvider } from 'react-helmet-async';
+import { NotificationProvider } from './contexts/NotificationContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,7 +13,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-      <App />
+      <NotificationProvider>
+        <App />
+      </NotificationProvider>
     </HelmetProvider>
   </React.StrictMode>
 );
