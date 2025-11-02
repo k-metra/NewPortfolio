@@ -2,12 +2,15 @@ import { motion } from "framer-motion";
 import InputField from "./inputField";
 import { useRef } from "react";
 import { useNotification } from "../contexts/NotificationContext";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
     const { addNotification } = useNotification();
     const submitBtn = useRef<HTMLButtonElement | null>(null);
     const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:8000";
     const contactForm = useRef<HTMLFormElement | null>(null);
+
+    const { t } = useTranslation();
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -61,7 +64,7 @@ export default function ContactForm() {
     return (
         <div className="w-full flex flex-col gap-4 font-jetbrains my-10">
             <h2 className="text-2xl font-bold text-text-primary">Contact Form</h2>
-            <p className="text-text-muted mb-6">Optionally, you can use this handy contact form to get in touch with me!</p>
+            <p className="text-text-muted mb-6">{t('contact.body3')}</p>
 
             <form ref={contactForm} onSubmit={onSubmit} className="md:grid md:grid-cols-2 flex flex-col gap-4 w-full">
                 <InputField label="Full Name" name="name" type="text" required={true} />
