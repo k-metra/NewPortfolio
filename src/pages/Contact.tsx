@@ -5,9 +5,11 @@ import { FaFacebook, FaGithub } from "react-icons/fa";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
+import ContactForm from "../components/contactForm";
 
 export default function Contact() {
     const { t } = useTranslation();
+
 
     return (
         <main className="w-full min-h-screen flex font-jetbrains flex-col items-center pt-24 pb-10 bg-background px-4 overflow-x-hidden">
@@ -39,6 +41,8 @@ export default function Contact() {
                     <ContactAvatar icon={<FaGithub />} name="GitHub" anchor="k-metra" url="https://github.com/k-metra" />
                 </div>
                 <p className="text-text-muted leading-relaxed mt-4">{t('contact.body2')}</p>
+
+                <ContactForm />
             </motion.div>
         </main>
     )
