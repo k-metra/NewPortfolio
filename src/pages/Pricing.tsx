@@ -26,7 +26,7 @@ export default function Pricing() {
                 <p className="text-text-muted text-sm py-4 border-t border-border mt-4 mb-8 text-center">Choose a package that best suits your needs, or contact me for a custom-tailored offer. Students from Lyceum of Alabang can claim a <strong className="underline underline-offset-2">one-time 25% discount</strong> to my services upon verification.</p>
             </div>
 
-            <div className="md:w-[60%] w-full max-w-[90vw] grid gap-8 sm:grid-cols-2 md:grid-cols-3 mb-16">
+            <div className="md:w-[90%] 2xl:w-[60%] x w-full max-w-[90vw] grid gap-8 sm:grid-cols-2 md:grid-cols-3 mb-16">
                 {pricingPlans.map((plan: PricingType, index: number) => (
                     <PricingCard key={index} title={plan.name} description={plan.description} price={plan.price} features={plan.features} popular={plan.popular} />
                 ))}
@@ -38,7 +38,7 @@ export default function Pricing() {
                     websites? Don't worry! I offer other services.</p>
             </div>
 
-            <div className="md:w-[60%] w-full max-w-[90vw] grid gap-8 sm:grid-cols-2 md:grid-cols-3 mb-16">
+            <div className="md:w-[90%] 2xl:w-[60%] w-full max-w-[90vw] grid gap-8 sm:grid-cols-2 md:grid-cols-3 mb-16">
                 {otherPlans.map((plan: PricingType, index: number) => (
                     <PricingCard key={index} title={plan.name} description={plan.description} price={plan.price} features={plan.features} popular={plan.popular} />
                 ))}
