@@ -19,13 +19,13 @@ jobs:
         
             - name: Deploy frontend
               run: |
-                rsync -avz --delete \
+                rsync -avz --delete -e "ssh -i ${{ secrets.SSH_KEY }} -o StrictHostKeyChecking=no" \
                     portfolio/ \
                     ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/vps-ftp/ftp/files/portfolio/
 
             - name: Deploy backend
               run: |
-                rsync -avz --exclude='.env' \
+                rsync -avz --exclude='.env' -e "ssh -i ${{ secrets.SSH_KEY }} -o StrictHostKeyChecking=no" \
                     portfolio_backend/ \
                     ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/vps-ftp/ftp/files/portfolio_backend/
 
