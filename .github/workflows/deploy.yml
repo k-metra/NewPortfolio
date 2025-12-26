@@ -15,17 +15,19 @@ jobs:
             - name: Add VPS to known_hosts
               run: |
                 mkdir -p ~/.ssh
+                echo "${{ secrets.SSH_KEY }}" > ~/.ssh/deploy_key
+                chmod 600 ~/.ssh/deploy_key
                 ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
         
             - name: Deploy frontend
               run: |
-                rsync -avz --delete -e "ssh -i ${{ secrets.SSH_KEY }} -o StrictHostKeyChecking=no" \
+                rsync -avz --delete -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
                     portfolio/ \
                     ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/vps-ftp/ftp/files/portfolio/
 
             - name: Deploy backend
               run: |
-                rsync -avz --exclude='.env' -e "ssh -i ${{ secrets.SSH_KEY }} -o StrictHostKeyChecking=no" \
+                rsync -avz --exclude='.env' -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
                     portfolio_backend/ \
                     ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/vps-ftp/ftp/files/portfolio_backend/
 
