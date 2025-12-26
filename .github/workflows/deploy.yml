@@ -18,11 +18,17 @@ jobs:
                 echo "${{ secrets.SSH_KEY }}" > ~/.ssh/deploy_key
                 chmod 600 ~/.ssh/deploy_key
                 ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+            
+            - name: Build frontend
+              run: |
+                cd frontend
+                npm ci
+                npm run build
         
             - name: Deploy frontend
               run: |
                 rsync -avz --delete -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
-                    frontend/ \
+                    frontend/build/ \
                     ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/vps-ftp/ftp/files/portfolio/
 
             - name: Deploy backend
