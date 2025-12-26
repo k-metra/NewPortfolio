@@ -1,0 +1,36 @@
+name: CI/CD Test Build
+
+on:
+    push:
+        branches: [ main ]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+        
+            - name: Deploy frontend
+              run: |
+                rsync -avz --delete \
+                    portfolio/ \
+                    ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/vps-ftp/ftp/files/portfolio/
+
+            - name: Deploy backend
+              run: |
+                rsync -avz --exclude='.env' \
+                    portfolio_backend/ \
+                    ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/vps-ftp/ftp/files/portfolio_backend/
+
+            
+            - name: Post-deploy optimization
+              uses: appleboy/ssh-action@v1
+              with:
+                host: ${{ secrets.SERVER_IP }}
+                username: ${{ secrets.SERVER_USER }}
+                key: ${{ secrets.SSH_PRIVATE_KEY }}
+                script: |
+                    cd /home/vps-ftp/ftp/files/portfolio_backend
+                    php artisan optimize

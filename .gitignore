@@ -1,22 +1,22 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+frontend/node_modules
+frontend/.pnp
+*.pnp.js
 
 # testing
-/coverage
+frontend/coverage
 
 # production
-/build
+frontend/build
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+backend/.DS_Store
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
 
 npm-debug.log*
 yarn-debug.log*
@@ -26,3 +26,28 @@ yarn-error.log*
 *.zip
 
 .env
+
+backend/*.log
+backend/.DS_Store
+backend/.env
+backend/.env.backup
+backend/.env.production
+backend/.phpactor.json
+backend/.phpunit.result.cache
+backend/.fleet
+backend/.idea
+backend/.nova
+backend/.phpunit.cache
+backend/.vscode
+backend/.zed
+backend/auth.json
+backend/node_modules
+backend/public/build
+backend/public/hot
+backend/public/storage
+backend/storage/*.key
+backend/storage/pail
+backend/vendor
+backend/Homestead.json
+backend/Homestead.yaml
+backend/Thumbs.db
